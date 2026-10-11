@@ -116,10 +116,13 @@ The main interface for evaluating AI-generated answers and proposed actions.
 ![AgentTrust Dashboard](screenshots/dashboard.png)
 
 ### Evaluation Results
+
 Displays AI confidence, retrieved evidence, authorization status, risk score, and the final decision.
 
 ![AgentTrust Evaluation Results](screenshots/decision_results.png)
-(screenshots/decision_results2.png)
+
+![AgentTrust Detailed Results](screenshots/decision_results2.png)
+
 
 ### Audit History
 Shows the recorded decision and its supporting audit details.
