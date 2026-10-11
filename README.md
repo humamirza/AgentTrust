@@ -107,3 +107,21 @@ python -m unittest -v
 ## Author
 
 Built as an AI engineering portfolio project exploring evidence-grounded decisions, authorization, risk assessment, and AI governance.
+
+## 📸 Screenshots
+
+### AgentTrust Dashboard
+The main interface for evaluating AI-generated answers and proposed actions.
+
+![AgentTrust Dashboard](screenshots/dashboard.png)
+
+### Evaluation Results
+Displays AI confidence, retrieved evidence, authorization status, risk score, and the final decision.
+
+![AgentTrust Evaluation Results](screenshots/decision_results.png)
+(screenshots/decision_results2.png)
+
+### Audit History
+Shows the recorded decision and its supporting audit details.
+
+![AgentTrust Audit History](screenshots/audit_history.png)
