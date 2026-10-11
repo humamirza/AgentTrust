@@ -1,0 +1,19 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local environment and secrets
+.env
+.env.*
+
+# AgentTrust local evaluation data
+audit_log.jsonl
+
+# Local backups
+app_backup.py
+
+# macOS
+.DS_Store
