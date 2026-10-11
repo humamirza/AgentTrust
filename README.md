@@ -1,4 +1,3 @@
-
 # AgentTrust 🛡️
 ### Evidence-to-Action Auditor for AI Agents
 
@@ -40,7 +39,7 @@ AI agents can produce incorrect answers or propose actions that exceed their per
 - Streamlit
 - Ollama
 - Llama 3.2
-- unittest
+- `unittest`
 - JSON / JSONL
 
 ## Run Locally
@@ -48,24 +47,38 @@ AI agents can produce incorrect answers or propose actions that exceed their per
 ### Prerequisites
 
 - Python 3.12+
-- Ollama installed
+- [Ollama](https://ollama.com/download)
 - Git
 
 ### Setup
 
-Clone or download this repository, then open its directory in a terminal.
+Clone the repository and open its directory in a terminal:
 
-Create and activate a virtual environment:
+```bash
+git clone https://github.com/humamirza/AgentTrust.git
+cd AgentTrust
+```
+
+Create and activate a virtual environment.
+
+**macOS / Linux**
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-Install dependencies from `requirements.txt`:
+**Windows**
+
+```powershell
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Install dependencies:
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 Download the model:
@@ -89,12 +102,12 @@ python -m unittest -v
 ## Safety and Limitations
 
 - This is a prototype, not a production security boundary.
-- Evidence verification currently supports a limited set of known facts; it is not a general-purpose fact verifier.
+- Evidence verification supports a limited set of known facts; it is not a general-purpose fact verifier.
 - Model-reported confidence is not a calibrated probability of correctness.
 - Risk scores and permission rules are configured heuristics, not universal risk measurements.
 - ALLOW means the configured checks passed; it does not guarantee that an answer or action is safe.
 - Proposed actions are evaluated but not executed.
-- The local dashboard requires the model and Ollama to be available on the machine running it.
+- The dashboard requires Ollama and the configured model to be available on the machine running it.
 
 ## Future Improvements
 
@@ -111,6 +124,7 @@ Built as an AI engineering portfolio project exploring evidence-grounded decisio
 ## 📸 Screenshots
 
 ### AgentTrust Dashboard
+
 The main interface for evaluating AI-generated answers and proposed actions.
 
 ![AgentTrust Dashboard](screenshots/dashboard.png)
@@ -123,8 +137,8 @@ Displays AI confidence, retrieved evidence, authorization status, risk score, an
 
 ![AgentTrust Detailed Results](screenshots/decision_results2.png)
 
-
 ### Audit History
+
 Shows the recorded decision and its supporting audit details.
 
 ![AgentTrust Audit History](screenshots/audit_history.png)
